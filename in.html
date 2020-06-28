@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <HTML>
 <HEAD>
@@ -10,74 +11,100 @@ box-sizing: border-box;
 h1 {
 margin-bottom: 15px;
 }
-div{
-
-
-}
-#p1,#p2,#p3 {border: 2px solid black;
-  padding-right: 30px;
-}
-
 p {
-width: 90%;
-height: 100px;
+border: 1px solid black;
+width: 90px;
+height: 150px;
+
 margin-right: auto;
 margin-left: auto;
 font-family: helvetica;
 margin-bottom: 15px;
-background-color: gray;
+margin-top: 15px;
+background-color:lightblue;
+padding: 2px;
+
+}
+div{
+background-color:gray;
+border: 1px solid black;
+position: relative;
+padding: 5PX;
+margin-top: 5px;
 }
 
 
-.row {
-width: 100%;
-  }
  
  @media (min-width: 1200px)
  {
-  .class1, .class2, .class3{
+  .col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6{
+
   float: left;
- 
+  border: 1px solid black;
   }
- 
-   }
+  .col-lg-1{
+  width: 8.33%;
+  }
+  .col-lg-2{
+  width: 16.66%;
+  }
+  .col-lg-3{
+  width: 25%;
+  }
+  .col-lg-4{
+  width: 33%;
+  }
+  .col-lg-5{
+  width: 41.66%;
+  }
+  .col-lg-6{
+  width: 50%;
+  }
   #p1{
-  width: 30%;
-  position: relative;
-  top: 60px;
-  left: 50px;
+  width: 33.33%;
+ 
   }
   #p2{
-    position: relative;
-    top: 60px;
-    left: 60px;
-  width: 30%;
+  width: 33.33%;
+ 
+ 
   }
   #p3{
-    position: relative;
-    top: 60px;
-    left: 70px;
-  width: 30%;
+  width: 33.33%;
+
+ 
+ 
   }
  }
  @media (min-width: 950px) and (max-width: 1199px)
  {
-  .class1,.class2,.class3{
+  .col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6{
+
   float: left;
   border: 1px solid black;
   }
-  .class1{
+  .col-md-1{
   width: 8.33%;
   }
-  .class2{
+  .col-md-2{
   width: 16.66%;
   }
-  .class3{
+  .col-md-3{
   width: 25%;
   }
+  .col-md-4{
+  width: 33%;
+  }
+  .col-md-5{
+  width: 41.33%;
+  }
+  .col-md-6{
+  width: 50;
+
+  }
+
   #p1{
   width: 50%;
-   
   }
   #p2{
   width: 50%;
@@ -85,22 +112,14 @@ width: 100%;
   #p3{
   width: 100%;
   }
-  h2,h3,h4 { font-size: 20px;
-     border: 1px solid black;
-  }
-  .head1{
-    border: 1px solid red;
-  }
-
  }
 </style>
 </HEAD>
 <BODY>
 <H1 align='center'>Our Menu</H1>
-<div class="row">
-<div class="class1" id="p1"><div class="head1"><h2 class="head1" text align="right" >chicken</h2></div><p> lorem ipsum dolor sit amet,consectetur adipising elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commando consequat</p></div>
-<div class="class2" id="p2"><h3 text align="right">beef</h3><p>lorem ipsum dolor sit amet,consectetur adipising elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commando consequat</p></div>
-<div class="class3" id="p3"><h4 text align="right">sushi</h4><p>lorem ipsum dolor sit amet,consectetur adipising elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commando consequat</p></div>
-</div>
+<div class="col-lg-3 col-md-6" id="p1"><p>chicken</p></div>  
+<div class=" col-lg-3 col-md-6" id="p2"><p>beef</p></div>
+<div class="col-lg-3 col-md-6 " id="p3"><p>sushi</p></div>
+
 <BODY>
 </HTML>
